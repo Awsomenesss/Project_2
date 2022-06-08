@@ -1,0 +1,151 @@
+
+/* Global style */
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    font-family: "Benne", serif;
+    background-color: azure;
+    color: black;
+    text-align: center;
+}
+
+
+
+/* Heading style */
+.nav-bar{
+    text-decoration: none;
+    text-align: center;
+    font-size: 60%;
+    margin-top: 0.5%;
+    
+    
+}
+
+.logo {
+    width: 20%;
+    
+}
+
+/* Game menu buttons */
+.index_btn {
+    background-color: #272626;
+    padding: 1em 1em;
+    font-size: 2.5rem;
+    border-radius: 25px;
+    margin-top: 2%;
+    display: inline-block;
+    width: 15%;
+}
+
+
+/* Score Board / Results */
+.badge {
+    background: grey;
+    color: white;
+    text-transform: uppercase;
+    font-size: 70%;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+
+#user_label {
+    position: absolute;
+    top: 50%;
+    left: -5%;
+    transform: translate(-10%, -50%);
+    padding-bottom: 1%;
+}
+
+#computer_label {
+    position: absolute;
+    top: 50%;
+    right: -5%;
+    transform: translate(10%, -50%);
+    padding-bottom: 1%;
+}
+
+.score-board {
+    
+    width: 00px;
+    margin: 40px auto;
+    font-size: 40px;
+    border-radius: 4px;
+    text-align: center;
+    padding: 15px 20px;
+    position: relative;
+}
+
+#result_display {
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    font-size: 250%;
+}
+
+/* game area */
+.player_area {
+    width: 50%;
+    float: left;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    font-size: 150%;
+}
+.computer_area {
+    width: 50%;
+    float: right;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    font-size: 150%;
+}
+
+
+/* Weapon Buttons */
+
+.far {
+    padding-top: 10px;
+    border-radius: 50%;
+    
+    border: 10px solid;
+    width: 100px;
+    font-size: 3.2rem;
+    margin: 0 30px;
+    transition: all 0.5s;
+}
+.far:hover {
+    background-color: #0085c7;
+    color: white;
+    transform: scale(2);
+}
+
+
+/* Footer */
+footer {
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer li {
+    display: inline;
+}
+
+.footer i {
+    font-size: 300%;
+    margin: 1%;
+    padding: 3%;
+    color: #3a3a3a;
+}
+
+.fa-brands:hover {
+    transform: scale(2);
+}
+
+
+
