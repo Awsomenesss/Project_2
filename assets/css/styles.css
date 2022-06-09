@@ -4,10 +4,11 @@
     margin: 0;
     padding: 0;
     border: none;
+    text-decoration: none;
 }
 
 body {
-    font-family: "Benne", serif;
+    font-family: "", serif;
     background-color: azure;
     color: black;
     text-align: center;
@@ -17,16 +18,23 @@ body {
 
 /* Heading style */
 .nav-bar{
-    text-decoration: none;
+    text-decoration:none;
     text-align: center;
     font-size: 60%;
     margin-top: 0.5%;
+    
     
     
 }
 
 .logo {
     width: 20%;
+    text-decoration:none;
+    text-align: center;
+    font-size: 60%;
+    margin-top: 0.5%;
+    display: flex;
+    flex-direction: column;
     
 }
 

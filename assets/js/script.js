@@ -1,20 +1,32 @@
+//get the button elements and add event listener to them
+
 var computerChoiceDisplay = document.getElementById("computer_choice");
-var userChoiceDisplay = document.getElementById("user_choice");
+var userChoiceDisplay = document.getElementById("player_choice");
 var resultDisplay = document.getElementById("result_display");
 var computerScore = 0;
 var userScore = 0;
 
 let computerLabel = document.getElementById("computer_label");
-let playerLabel = document.getElementById("user_label");
+let playerLabel = document.getElementById("player_label");
 
 var userChoice;
 var computerChoice;
 var result;
 
-var choices = ["rock", "paper", "scissors","lizard","spock"];
 
-window.onload = function() {
-    for (let i = 0; i < 5; i++) {
+
+    document.addEventListener("DOMContentLoaded", function() {
+        let buttons = document.getElementsByTagName("button");
+    
+        for (let button of buttons) {
+            button.addEventListener("click", function() {
+                let playerChoice = this.getAttribute("data-choice");
+                playGame (playerChoice);
+        });
+    }
+});
+
+
         
         let choice = document.getElementsByClassName("btn_big");
         choice.id = choices[i];
@@ -49,4 +61,4 @@ function incrementUserScore() {
     // Gets the current player score from the DOM and increments it by 1
     let oldScore = userScore.innerText;
     userScore.innerText = ++oldScore;
-    let newScore = userScore.innerHTML;
+    let newScore = userScore.innerHTML;*/

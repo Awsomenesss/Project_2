@@ -13,7 +13,8 @@
 </head>
 
 <body>
-    <header class="nav-bar">
+    <header>
+    <div class="nav-bar">
         <a href="index.html">
             <h1 id="logo">Rock,Paper,Scissor,lizard,spock</h1>
         </a>
@@ -28,6 +29,7 @@
                 </li>
             </ul>
         </nav>
+    </div>    
 
     </header>
     
@@ -37,8 +39,8 @@
                 <h2 id="result_display">Result: <span id="result"></span></h2>
 
                 <div class="score-board">
-                    <div id="user_label" class="badge">PLAYER</div>
-                    <div id="computer_label" class="badge">CPU</div>
+                    <div id="user_label" class="badge">player</div>
+                    <div id="computer_label" class="badge">computer</div>
                     <span id="user_score"></span> - <span id="computer_score"></span>
                 </div>
 
@@ -64,27 +66,27 @@
 
         <!-- choice buttons -->
         <section>
-            <div class="weapons_area">
-                <h2 id="weapon_txt">Select your weapon</h2>
+            <div class="buttons-area">
+                <h2 >Your choices</h2>
 
-                <div class="weapons">
-                    <button onclick="selectRock()" id="Rock">
+                <div class="buttons">
+                    <button id="Rock">
                         <i class="far fa-hand-rock weapon"></i>
                     </button>
-                    <button onclick="selectPaper()" id="Paper">
+                    <button id="Paper">
                         <i class="far fa-hand-paper weapon"></i>
                     </button>
                     
                 
-                <button onclick="selectScissors()" id="Scissors">
+                <button id="Scissors">
                     <i class="far fa-hand-scissors weapon"></i>
                 </button>
 
                 <div class="weapons_botton">
-                    <button onclick="selectLizard()" id="Lizard">
+                    <button id="Lizard">
                         <i class="far fa-hand-lizard weapon"></i>
                     </button>
-                    <button onclick="selectSpock()" id="Spock">
+                    <button id="Spock">
                         <i class="far fa-hand-spock weapon"></i>
                     </button>
                 </div>
