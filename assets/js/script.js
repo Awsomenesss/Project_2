@@ -28,12 +28,7 @@ var result;
 console.log(choice)
 
 
-        
-        
-        //choice.id = choice;
-        //choice.src = choice[i] + "far";
-        //choice.addEventListener("click", selectChoice);
-        //document.getElementById("choices").append(userChoiceDisplay);
+    
     
 
 
