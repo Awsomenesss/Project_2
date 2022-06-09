@@ -1,44 +1,45 @@
 //get the button elements and add event listener to them
-
+const choice = document.getElementsByClassName("far");
+const computerScore=document.getElementsByTagName("choice");
 var computerChoiceDisplay = document.getElementById("computer_choice");
 var userChoiceDisplay = document.getElementById("player_choice");
 var resultDisplay = document.getElementById("result_display");
-var computerScore = 0;
+
 var userScore = 0;
 
 let computerLabel = document.getElementById("computer_label");
 let playerLabel = document.getElementById("player_label");
 
-var userChoice;
-var computerChoice;
+
 var result;
 
 
 
     document.addEventListener("DOMContentLoaded", function() {
-        let buttons = document.getElementsByTagName("button");
+        let buttons = document.getElementsByTagName("choice");
     
         for (let button of buttons) {
             button.addEventListener("click", function() {
-                let playerChoice = this.getAttribute("data-choice");
+                let playerChoice = this.getAttribute("choice");
                 playGame (playerChoice);
         });
     }
 });
+console.log(choice)
 
 
         
-        let choice = document.getElementsByClassName("btn_big");
-        choice.id = choices[i];
-        choice.src = choices[i] + "btn_big";
-        choice.addEventListener("click", selectChoice);
-        document.getElementById("choices").append(userChoiceDisplay);
-    }
-}
+        
+        //choice.id = choice;
+        //choice.src = choice[i] + "far";
+        //choice.addEventListener("click", selectChoice);
+        //document.getElementById("choices").append(userChoiceDisplay);
+    
 
-function selectChoice() {
+
+function selectChoice(){
     you = this.id;
-    document.getElementById("userScore").src = innerHTML + "btn_big";
+    document.getElementById("userScore").src = innerHTML + "far";}
 
     
 
@@ -53,7 +54,7 @@ function incrementComputerScore() {
     // Gets the current computer score from the DOM and increments it by 1
     let oldScore = computerScore.innerText;
     computerScore.innerText = ++oldScore;
-    let newScore = computerScore.innerHTML;
+    let newScore = computerScore.innerHTML;}
  
 
 // Gets current user score and increments 1
@@ -61,4 +62,4 @@ function incrementUserScore() {
     // Gets the current player score from the DOM and increments it by 1
     let oldScore = userScore.innerText;
     userScore.innerText = ++oldScore;
-    let newScore = userScore.innerHTML;*/
+    let newScore = userScore.innerHTML;}
