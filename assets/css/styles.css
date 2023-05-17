@@ -18,6 +18,7 @@
 
 /* Game Area */
 .container {
+    background:#00FF00;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,16 +27,7 @@
     box-sizing: border-box;
   }
 
-.game-space {
-    background-color: rgb(17, 16, 16);
-    box-sizing: border-box;
-    width: 90%;
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 30px;
-    border-radius: 12px;
-}
+
 
 .player-choice {
     width: 80%;
