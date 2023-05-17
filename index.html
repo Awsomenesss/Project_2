@@ -2,69 +2,70 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="choice game">
-    <meta name="keywords" content="Rock,Paper,Scissor,lizard,spock">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <title>Rock Paper Scissor, lizard, spock </title>
-    
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="choice game">
+  <meta name="keywords" content="Rock,Paper,Scissor,lizard,spock">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <title>Rock Paper Scissor, lizard, spock</title>
 </head>
 
 <body>
-    <div class="container">
-        
+  <div class="container">
+
     <header>
-        <h1 id="game-title">
-            Rock Paper Scissors Lizard Spock
-        </h1>
-        <p>Try out your luck buy adding and subtracting the attemptes to see who wins </P>
-           <P> your choices are to the right side of the screen <P> 
-            
-            <a href="rules.html" class="back-button"><i class="fas fa-book"></i> The Game Rules</a>
-           
+      <h1 id="game-title">
+        Rock Paper Scissors Lizard Spock
+      </h1>
+      <p>Try out your luck by adding and subtracting the attempts to see who wins</p>
+      <p>Your choices are to the right side of the screen</p>
+
+      <a href="rules.html" class="back-button"><i class="fas fa-book"></i> The Game Rules</a>
     </header>
 
     <section class="players-choice">
-        <section class="game-results">
-            <span id="players-choice"></span>
-            <span id="vs">Vs.</span>
-            <span id="comp-choice"></span>
-        </section>
+      <section class="game-results">
+        <h2>Game Results</h2>
+        <span id="players-choice"></span>
+        <span id="vs">Vs.</span>
+        <span id="comp-choice"></span>
+      </section>
 
-        <br>
-        <section class="score-area">
-            <p class="score" id="pScore">Players Score: <span id="wins">0</span></p>
-            <p class="score" id="cScore"><span id="losses">0</span>:Computers Score </p>
-            <button class="reset" id="reset"><i class="fas fa-sync"></i></button>
-        </section>
+      <br>
+      <section class="score-area">
+        <h2>Score Area</h2>
+        <p class="score" id="pScore">Players Score: <span id="wins">0</span></p>
+        <p class="score" id="cScore"><span id="losses">0</span>:Computers Score</p>
+        <button class="reset" id="reset"><i class="fas fa-sync"></i></button>
+      </section>
 
-        <br>
-        <section>
-            <span id="result"></span>
-        </section>
+      <br>
+      <section>
+        <h2>Result</h2>
+        <span id="result"></span>
+      </section>
 
-        <section class="max-clicks">
-            <h3>Atemptes:<span id="maxClicks">1</span></h3>
-            <button id="incrementBtn" class="attemptbtn">Add</button>
-            <button id="decrementBtn" class="attemptbtn">Sub</button>
-        </section>
+      <section class="max-clicks">
+        <h2>Max Clicks</h2>
+        <h3>Attempts: <span id="maxClicks">1</span></h3>
+        <button id="incrementBtn" class="attemptbtn">Add</button>
+        <button id="decrementBtn" class="attemptbtn">Sub</button>
+      </section>
     </section>
 
     <section>
-        <h2> Make your pick after setting the number of attemptes  </h2>
-        <button class="btn" id="rock"><i class="far fa-hand-rock"></i></button>
-        <button class="btn" id="paper"><i class="far fa-hand-paper"></i></button>
-        <button class="btn" id="scissors"><i class="far fa-hand-scissors"></i></button>
-        <button class="btn" id="lizard"><i class="far fa-hand-lizard"></i></button>
-        <button class="btn" id="spock"><i class="far fa-hand-spock"></i></button>
+      <h2>Make your pick after setting the number of attempts</h2>
+      <button class="btn" id="rock"><i class="far fa-hand-rock"></i></button>
+      <button class="btn" id="paper"><i class="far fa-hand-paper"></i></button>
+      <button class="btn" id="scissors"><i class="far fa-hand-scissors"></i></button>
+      <button class="btn" id="lizard"><i class="far fa-hand-lizard"></i></button>
+      <button class="btn" id="spock"><i class="far fa-hand-spock"></i></button>
     </section>
-</div>
+  </div>
 
-
-    <script src="https://kit.fontawesome.com/5450f0d173.js" crossorigin="anonymous"></script>
-    <script src="assets/js/script.js"></script>
+  <script src="https://kit.fontawesome.com/5450f0d173.js" crossorigin="anonymous"></script>
+  <script src="assets/js/script.js"></script>
 </body>
 
 </html>
