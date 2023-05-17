@@ -14,11 +14,17 @@
 </head>
 
 <body>
+    <div class="container">
+        
     <header>
         <h1 id="game-title">
             Rock Paper Scissors Lizard Spock
-            <a href="rules.html">The Game Rules</a>
         </h1>
+        <p>Try out your luck buy adding and subtracting the attemptes to see who wins </P>
+           <P> your choices are to the right side of the screen <P> 
+            <a href="rules.html"></a>
+            <a href="../rules.html" class="back-button"><i class="fas fa-book"></i> The Game Rules</a>
+           
     </header>
 
     <section class="players-choice">
@@ -42,20 +48,21 @@
 
         <section class="max-clicks">
             <h3>Atemptes:<span id="maxClicks">1</span></h3>
-            
-            <button id="incrementBtn" class="attemptbtn">+</button>
-            <button id="decrementBtn" class="attemptbtn">-</button>
+            <button id="incrementBtn" class="attemptbtn">Add</button>
+            <button id="decrementBtn" class="attemptbtn">Sub</button>
         </section>
     </section>
 
     <section>
+        <h2> Make your pick after setting the number of attemptes  </h2>
         <button class="btn" id="rock"><i class="far fa-hand-rock"></i></button>
         <button class="btn" id="paper"><i class="far fa-hand-paper"></i></button>
         <button class="btn" id="scissors"><i class="far fa-hand-scissors"></i></button>
-        <br>
         <button class="btn" id="lizard"><i class="far fa-hand-lizard"></i></button>
         <button class="btn" id="spock"><i class="far fa-hand-spock"></i></button>
     </section>
+</div>
+
 
     <script src="https://kit.fontawesome.com/5450f0d173.js" crossorigin="anonymous"></script>
     <script src="/assets/js/script.js"></script>

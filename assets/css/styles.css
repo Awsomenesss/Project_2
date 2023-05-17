@@ -17,6 +17,14 @@
   }
 
 /* Game Area */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border: 2px solid #000;
+    box-sizing: border-box;
+  }
 
 .game-space {
     background-color: rgb(17, 16, 16);
@@ -61,12 +69,9 @@
     display: inline;
     font-family: 'sans-serif',cursive;
     font-size: xx-large;
-    color: #fff;
+    color:#000000;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
-
-
-
 
 #reset {
     margin: 30px;
@@ -90,8 +95,8 @@
 
 .btn {
     margin: 30px;
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     border: 0;
     background-color: lightgrey;
     text-decoration: none;
@@ -106,14 +111,15 @@
     padding: 10px;
 }
 .attemptbtn{
-    margin: 50px;
-    width: 50px;
-    height: 50px;
+    margin: 30px;
+    width: 70px;
+    height: 70px;
     border: 0;
-    background-color: rgb(126, 110, 110);
-    text-decoration:double;
+    background-color:#2b3d59 ;
+    color: gray;
+    border: none;
+    border-radius: 8px;
+    height: 60px;
+    width: 60px;
     cursor: pointer;
-    border-radius: 50%;
-    text-align: center;
-    text-shadow:#070707;
 }

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Rules</title>
+    <!-- Include Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body,
+        html {
+            height: 100%;
+        }
+
+        .hero {
+            position: relative;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hero-content {
+            text-align: center;
+            color: #fff;
+            z-index: 1;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #383231;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+
+        .hero-content p {
+            margin: 10px 0;
+            font-size: 38px;
+        }
+
+        .back-button:hover {
+            background-color: #5c564f;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hero">
+        <img class="hero-image" src="/assets/images/hero.jpg" alt="Hero Image">
+        <div class="hero-content">
+            <h1>Game Rules</h1>
+            <p>Scissors cuts paper</p>
+            <p>paper covers rock</p>
+            <p>rock crushes lizard</p>
+            <p>lizard poisons Spock</p>
+            <p>Spock smashes scissors</p>
+            <p>scissors decapitates lizard</p>
+            <p>lizard eats paper</p>
+            <p>paper disproves Spock</p>
+            <p>Spock vaporizes rock</p>
+            <p>rock crushes scissors</p>
+            <a href="../index.html" class="back-button"><i class="fas fa-arrow-left"></i> Back to Game</a>
+        </div>
+    </div>
+    <!-- Include Font Awesome JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</body>
+
+</html>

@@ -16,6 +16,7 @@ let maxClicks = 1;
 let currentClicks = 0;
 let gameEnded = false;
 
+
 rock.addEventListener("click", function () {
     if (!gameEnded) {
         whoWins("Rock");
