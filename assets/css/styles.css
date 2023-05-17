@@ -1,159 +1,119 @@
-
-/* Global style */
-* {
-    margin: 0;
-    padding: 0;
-    border: none;
-    text-decoration: none;
-}
-
-body {
-    font-family: "", serif;
-    background-color: azure;
-    color: black;
+*{
+    font-family: 'Open Sans', ;
     text-align: center;
 }
 
+/* Heading */
 
-
-/* Heading style */
-.nav-bar{
-    text-decoration:none;
-    text-align: center;
-    font-size: 60%;
-    margin-top: 0.5%;
-    
-    
+#game-title {
+    font-family: 'sans-serif', cursive;
+    color: slategray;
     
 }
 
-.logo {
-    width: 20%;
-    text-decoration:none;
-    text-align: center;
-    font-size: 60%;
-    margin-top: 0.5%;
-    display: flex;
-    flex-direction: column;
-    
+#result {
+    font-family: 'sans-serif',cursive;
+    font-size: 60px;
+  }
+
+/* Game Area */
+
+.game-space {
+    background-color: rgb(17, 16, 16);
+    box-sizing: border-box;
+    width: 90%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    border-radius: 12px;
 }
 
-/* Game menu buttons */
-.index_btn {
-    background-color: #272626;
-    padding: 1em 1em;
-    font-size: 2.5rem;
-    border-radius: 25px;
-    margin-top: 2%;
-    display: inline-block;
-    width: 15%;
+.player-choice {
+    width: 80%;
+    height: 300px;
+    margin: auto;
+    padding: 10px;
 }
 
-
-/* Score Board / Results */
-.badge {
-    background: grey;
-    color: white;
-    text-transform: uppercase;
-    font-size: 70%;
-    padding: 10px 10px;
-    border-radius: 10px;
+.game-results {
+    width: 80%;
+    height: 200px;
+    margin: auto;
+    padding: 10px;
 }
 
-#user_label {
-    position: absolute;
-    top: 50%;
-    left: -5%;
-    transform: translate(-10%, -50%);
-    padding-bottom: 1%;
+/* Results Area */
+
+#vs {
+    padding: 10px;
+    margin: auto;
+    font-family: cursive;
+    font-size: xx-large;
+    vertical-align: middle;
+    color: #070707;
+
 }
 
-#computer_label {
-    position: absolute;
-    top: 50%;
-    right: -5%;
-    transform: translate(10%, -50%);
-    padding-bottom: 1%;
-}
+/* Score Area */
 
-.score-board {
-    
-    width: 00px;
-    margin: 40px auto;
-    font-size: 40px;
-    border-radius: 4px;
-    text-align: center;
-    padding: 15px 20px;
-    position: relative;
-}
-
-#result_display {
-    margin-top: 2.5%;
-    margin-bottom: 2.5%;
-    font-size: 250%;
-}
-
-/* game area */
-.player_area {
-    width: 50%;
-    float: left;
-    margin-top: 2.5%;
-    margin-bottom: 2.5%;
-    font-size: 150%;
-}
-.computer_area {
-    width: 50%;
-    float: right;
-    margin-top: 2.5%;
-    margin-bottom: 2.5%;
-    font-size: 150%;
-}
-
-
-/* Weapon Buttons */
-
-.far {
-    padding-top: 10px;
-    border-radius: 50%;
-    
-    border: 10px solid;
-    width: 100px;
-    font-size: 3.2rem;
-    margin: 0 30px;
-    transition: all 0.5s;
-}
-.far:hover {
-    background-color: #0085c7;
-    color: white;
-    transform: scale(2);
-}
-
-
-/* Footer */
-footer {
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-}
-
-.footer {
-    text-align: center;
-}
-
-.footer li {
+.score {
     display: inline;
-}
-
-.footer i {
-    font-size: 300%;
-    margin: 1%;
-    padding: 3%;
-    color: #3a3a3a;
-}
-
-.fa-brands:hover {
-    transform: scale(2);
+    font-family: 'sans-serif',cursive;
+    font-size: xx-large;
+    color: #fff;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 
 
+
+#reset {
+    margin: 30px;
+    width: 70px;
+    height: 70px;
+    border: 0;
+    background-color: #171616;
+    color: gray;
+    border: none;
+    border-radius: 8px;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+}
+
+
+
+
+
+/* Buttons for controls */
+
+.btn {
+    margin: 30px;
+    width: 150px;
+    height: 150px;
+    border: 0;
+    background-color: lightgrey;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 50%;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(122, 116, 116, 0.5);
+    background-color: #383231;
+    color: #fff;
+    font-size: 90px;
+    margin: 0;
+    padding: 10px;
+}
+.attemptbtn{
+    margin: 50px;
+    width: 50px;
+    height: 50px;
+    border: 0;
+    background-color: rgb(126, 110, 110);
+    text-decoration:double;
+    cursor: pointer;
+    border-radius: 50%;
+    text-align: center;
+    text-shadow:#070707;
+}

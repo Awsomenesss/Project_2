@@ -5,114 +5,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="meditaion website">
+    <meta name="description" content="choice game">
     <meta name="keywords" content="Rock,Paper,Scissor,lizard,spock">
 
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <title>Rock Paper Scissor,lizard,spock</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <title>Rock Paper Scissor, lizard, spock </title>
+    
 </head>
 
 <body>
     <header>
-    <div class="nav-bar">
-        <a href="index.html">
-            <h1 id="logo">Rock,Paper,Scissor,lizard,spock</h1>
-        </a>
-        <nav>
-            <ul id="menu">
-                <li>
-                    <a href="rules.html" class="active">Rules</a>
-                </li>
-
-                <li>
-                    <a href="index.html" class="active">Home</a>
-                </li>
-            </ul>
-        </nav>
-    </div>    
-
+        <h1 id="game-title">
+            Rock Paper Scissors Lizard Spock
+            <a href="rules.html">The Game Rules</a>
+        </h1>
     </header>
-    
-         <!-- Game result area -->
-         <section>
-            <div >
-                <h2 id="result_display">Result: <span id="result"></span></h2>
 
-                <div class="score-board">
-                    <div id="user_label" class="badge">player</div>
-                    <div id="computer_label" class="badge">computer</div>
-                    <span id="user_score"></span> - <span id="computer_score"></span>
-                </div>
-
-                <div class="choice_area">
-                    <div class="player_area">
-                        <h2>
-                            Player Choice:
-                            <br />
-                            <span id="user_choice"></span>
-                        </h2>
-                    </div>
-
-                    <div class="computer_area">
-                        <h2>
-                            :Computer Choice
-                            <br />
-                            <span id="computer_choice"></span>
-                        </h2>
-                    </div>
-                </div>
-            </div>
+    <section class="players-choice">
+        <section class="game-results">
+            <span id="players-choice"></span>
+            <span id="vs">Vs.</span>
+            <span id="comp-choice"></span>
         </section>
 
-        <!-- choice buttons -->
+        <br>
+        <section class="score-area">
+            <p class="score" id="pScore">Players Score: <span id="wins">0</span></p>
+            <p class="score" id="cScore"><span id="losses">0</span>:Computers Score </p>
+            <button class="reset" id="reset"><i class="fas fa-sync"></i></button>
+        </section>
+
+        <br>
         <section>
-            <div class="buttons-area">
-                <h2 >Your choices</h2>
-
-                <div class="buttons">
-                    <button id="Rock" choice="rock">
-                        <i class="far fa-hand-rock"></i>
-                    </button>
-                    <button id="Paper" choice="paper">
-                        <i class="far fa-hand-paper"></i>
-                    </button>
-                    
-                
-                <button id="Scissors" choice="scissors">
-                    <i class="far fa-hand-scissors"></i>
-                </button>
-
-                <div class="botton">
-                    <button id="Lizard" choice="lizard">
-                        <i class="far fa-hand-lizard"></i>
-                    </button>
-                    <button id="Spock" choice="spock">
-                        <i class="far fa-hand-spock"></i>
-                    </button>
-                </div>
-            </div>
+            <span id="result"></span>
         </section>
-        <!-- Footer with social media buttons/links-->
-        <footer>
-            <ul class="footer">
-                <li>
-                    <a href="https://facebook.com" target="_blank" rel="noopener"><i class="fa-brands fa-facebook"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
-                <li>
-                    <a href="https://twitter.com" target="_blank" rel="noopener"><i class="fa-brands fa-twitter"></i></a>
-                </li>
-                
-            </ul>
-        </footer>
-        
-    <!--font awesome link-->
-<script src="https://kit.fontawesome.com/63bc3b23f6.js" crossorigin="anonymous"></script>
 
-<script src="/assets/js/script.js"></script>
+        <section class="max-clicks">
+            <h3>Atemptes:<span id="maxClicks">1</span></h3>
+            
+            <button id="incrementBtn" class="attemptbtn">+</button>
+            <button id="decrementBtn" class="attemptbtn">-</button>
+        </section>
+    </section>
 
+    <section>
+        <button class="btn" id="rock"><i class="far fa-hand-rock"></i></button>
+        <button class="btn" id="paper"><i class="far fa-hand-paper"></i></button>
+        <button class="btn" id="scissors"><i class="far fa-hand-scissors"></i></button>
+        <br>
+        <button class="btn" id="lizard"><i class="far fa-hand-lizard"></i></button>
+        <button class="btn" id="spock"><i class="far fa-hand-spock"></i></button>
+    </section>
 
+    <script src="https://kit.fontawesome.com/5450f0d173.js" crossorigin="anonymous"></script>
+    <script src="/assets/js/script.js"></script>
 </body>
 
 </html>
