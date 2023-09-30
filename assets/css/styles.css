@@ -1,12 +1,12 @@
-*{
-    font-family: 'Open Sans', ;
+body {
+    font-family: 'Open Sans', sans-serif;
     text-align: center;
 }
 
 /* Heading */
 
 #game-title {
-    font-family: 'sans-serif', cursive;
+    font-family: 'Fredoka One', cursive;
     color: slategray;
     
 }
@@ -21,7 +21,6 @@
     background:#00FF00;
     display: flex;
     justify-content: center;
-    align-items: center;
     height: 100vh;
     border: 2px solid #000;
     box-sizing: border-box;
@@ -50,7 +49,6 @@
     margin: auto;
     font-family: cursive;
     font-size: xx-large;
-    vertical-align: middle;
     color: #070707;
 
 }
