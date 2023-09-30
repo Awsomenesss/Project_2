@@ -5,65 +5,80 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="choice game">
-  <meta name="keywords" content="Rock,Paper,Scissor,lizard,spock">
-  <link rel="stylesheet" href="assets/css/styles.css">
+
+   <!-- font awesome and google fonts -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nabla&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>RPSLS</title>
+  
   <title>Rock Paper Scissor, lizard, spock</title>
 </head>
 
 <body>
-    <header>
-        <h1 id="game-title">
-            Rock Paper Scissors Lizard Spock
-        </h1>
-    </header>
+    <h1 class="heading">
+        <img class="logo" src="assets/images/logo.png" alt="logo" />Rock Paper
+        Scissors Lizard Spock
+    </h1>
 
-  <div class="container">
-    <section class="players-choice">
-      <section class="game-results">
-        <h2>Game Results</h2>
-        <span id="players-choice"></span>
-        <span id="vs">Vs.</span>
-        <span id="comp-choice"></span>
-      </section>
+    <div class="results-area">
+        <span id="resultDisplay">Choose an option to start the game</span>
+        <span id="playerChoiceLabel">You</span>
+        <span id="playersChoice"></span>
+        <span id="vs">Vs</span>
+        <span id="compChoice"></span>
+        <span id="compChoiceLabel">Computer</span>
+    </div>
 
-      <br>
-      <section>
-        <h2>Result</h2>
-        <span id="result"></span>
-      </section>
-      
-      <section class="score-area">
-        <h2>Score Area</h2>
-        <p class="score" id="pScore">Players Score: <span id="wins">0</span></p> 
-        <p class="score" id="cScore"><span id="losses">0</span>:Computers Score</p>
-        
-      </section>
+    <div class="game-area">
+        <div class="attempt-buttons">
+            <h2>Attempt <span id="maxClicks">3</span></h2>
+            <button data-type="increase" class="btn--big btn--gray">
+                <i class="fas fa-plus"></i>
+            </button>
+            <button data-type="decrease" class="btn--big btn--gray">
+                <i class="fas fa-minus"></i>
+            </button>
+            <button data-type="reset" class="btn--big btn--gray">
+                <i class="fas fa-sync"></i>
+            </button>
+        </div>
+        <div class="controls-area">
+            <h1 class="heading">Your Choices</h1>
+            <button data-type="rock" class="btn btn--big btn--green">
+                <i class="far fa-hand-rock"></i>
+            </button>
+            <button data-type="paper" class="btn btn--big btn--blue">
+                <i class="far fa-hand-paper"></i>
+            </button>
+            <button data-type="scissors" class="btn btn--big btn--orange">
+                <i class="far fa-hand-scissors"></i>
+            </button>
+            <br />
+            <button data-type="lizard" class="btn btn--big btn--red">
+                <i class="far fa-hand-lizard"></i>
+            </button>
+            <button data-type="spock" class="btn btn--big btn--purple">
+                <i class="far fa-hand-spock"></i>
+            </button>
+        </div>
+    </div>
 
-      <br>
+    <div class="score-area">
+        <p class="score">Your Score:<span id="wins">0</span></p>
+        <p class="score">Computers Score:<span id="losses">0</span></p>
+    </div>
 
-
-      <section class="max-clicks">
-        <h2>Attempts: <span id="maxClicks">1</span></h2>
-        <button id="incrementBtn" class="attemptbtn">Add</button>
-        <button id="decrementBtn" class="attemptbtn">Sub</button>
-        <button class="reset" id="reset"><i class="fas fa-sync"></i>Reset</button>
-      </section>
-    </section>
-
-    <section>
-      <h2>Make your pick after setting the number of attempts</h2>
-      <button class="btn" id="rock"><i class="far fa-hand-rock"></i></button>
-      <button class="btn" id="paper"><i class="far fa-hand-paper"></i></button>
-      <button class="btn" id="scissors"><i class="far fa-hand-scissors"></i></button>
-      <br>
-      <button class="btn" id="lizard"><i class="far fa-hand-lizard"></i></button>
-      <button class="btn" id="spock"><i class="far fa-hand-spock"></i></button>
-    </section>
-  </div>
-
-  <script src="https://kit.fontawesome.com/5450f0d173.js" crossorigin="anonymous"></script>
-  <script src="assets/js/script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
